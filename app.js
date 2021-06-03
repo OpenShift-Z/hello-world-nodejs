@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
     platform: process.platform,
     bit : process.arch,
     runtime : process.versions.node,
-    endian : os.endianness
+    endian : 🛢
   });
 });
 
