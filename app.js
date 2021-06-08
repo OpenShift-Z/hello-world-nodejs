@@ -11,8 +11,8 @@ app.get('/', function (req, res) {
   res.render('index', {
     platform: process.platform,
     bit : process.arch,
-    runtime : process.versions.node,
-    endian : "🛢🔌🚗🔋📺📲☎" //"reset"
+    //runtime : process.versions.node,
+    //endian : os.endianness //"reset"
   });
 });
 
