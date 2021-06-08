@@ -10,9 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
   res.render('index', {
     platform: process.platform,
-    bit : process.arch,
-    //runtime : process.versions.node,
-    //endian : os.endianness //"reset"
+    bit : process.arch
   });
 });
 
