@@ -15,12 +15,6 @@ pipeline {
         stage('Create Project') {
             steps {
                 sh 'oc login --token=$oc_token --insecure-skip-tls-verify --server=$ocp_server'
-                //sh 'oc delete namespace $app --wait=true || true'
-                //sh 'oc new-project $app'
-                //sh 'oc project $app'
-                //sh 'kubectl create -f $pullSecret'
-                //sh 'oc secrets link builder 13358228-test19918811112-pull-secret'
-                //sh 'oc secrets link default 13358228-test19918811112-pull-secret'
             }
         }
 
