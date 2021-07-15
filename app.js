@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
   res.render('index', {
-    platform: process.platform, //process.platform
+    platform: "🎉 Hello from Sirius & IBM !! 🎉", //process.platform
     bit : process.arch
   });
 });
