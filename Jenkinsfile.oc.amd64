@@ -10,7 +10,7 @@ pipeline {
         ocp_server = 'https://c101-e.us-east.containers.cloud.ibm.com:32149'
         app = 'hello-world-nodejs'
     }
-
+-
     stages {
         stage('Create Project') {
             steps {

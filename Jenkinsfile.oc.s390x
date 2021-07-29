@@ -23,7 +23,7 @@ pipeline {
                 sh 'oc new-project $app || true'
                 sh 'oc delete bc $app || true'
                 sh 'oc delete deployment $app || true'
-                sh 'oc delete service $app  || true'
+                sh 'oc delete service $app || true'
                 sh 'oc delete route $app || true'
                 sh 'oc new-app $git'
                 sh 'sleep 15'
