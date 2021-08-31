@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
   res.render('index', {
-    platform: "🎉 Hello from IBM !! 🎉 ", //process.platform // 🎉 Hello from IBM !! 🎉
+    platform: "🎉 Hello from IBM !! 🎉  ", //process.platform // 🎉 Hello from IBM !! 🎉
     bit : process.arch
   });
 });
